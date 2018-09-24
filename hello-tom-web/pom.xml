@@ -14,8 +14,21 @@
 
    <build>
     <plugins>
-      <!-- embedded Tomcat 8 plugin configuration, use "mvn cargo:run" to run -->
-    
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven2-plugin</artifactId>
+        <version>1.6.8</version>
+        <configuration>
+          <container>
+            <containerId>tomcat8x</containerId>
+            <artifactInstaller>
+              <groupId>org.apache.tomcat</groupId>
+              <artifactId>tomcat</artifactId>
+              <version>8.5.31</version>
+            </artifactInstaller>
+          </container>
+      </configuration>
+      </plugin>
     </plugins>
   </build>
   
