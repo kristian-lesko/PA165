@@ -10,18 +10,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-
-<!-- TODO you should configure the compiler plugin! 
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				
-			</plugin>
-		</plugins>
-	</build>
-	-->
-	<dependencies>
-	</dependencies>
 </project>
